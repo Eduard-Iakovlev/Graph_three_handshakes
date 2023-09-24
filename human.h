@@ -19,11 +19,13 @@ public:
 	void add_hand(int n1, int n2);
 	// вывод сети в консоль
 	void show();
-	// поиск путей
-	
+	// поиск путей в глубину
+	void depth(int start);
+	// поис путей в ширину
+	void width(int start, int h);
 
 private:
-
+	void depthInner(int current, bool visited[]);
 	// проверка существования вершины
 	bool edgeExists(int v1, int v2);
 	// проверка существования ребра

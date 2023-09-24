@@ -30,7 +30,12 @@ int main() {
 
 	h.show();
 
-	h.findPathCount();
+	//h.depth(0);
+	for (int i = 0; i < SIZE; i++) {
+		h.width(i, 3);
+		std::cout << "\n";
+	}
+	
 
 
 }
